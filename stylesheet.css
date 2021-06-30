@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.all{
+	min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+h1 {
+	
+}
+
+h2 {
+	color:#4e3322;
+	text-align: center;
+}
+
+p {
+	color:#4e3322;
+}
+
+/*ヘッダー*/
+.header {
+	position: fixed;
+	width: 100%;
+	background: #F9F9F7;	
+}
+.header-inner{
+	display:flex;
+	justify-content: space-between;
+	width: 50%;
+	margin:0 auto;
+	align-items: center;
+}
+.header-menu {
+ 	list-style-type: none;
+}
+
+#inquiry{
+	padding: 5px 10px;
+	text-align: center;
+	background: #f3a324;
+	color:white;
+	margin:22px;
+}
+
+.header-menu li {
+ 	display: inline;
+}
+
+.header-logo img {
+ 	width: 300px;
+ 	height: auto;
+}
+
+.header-menu li a{
+	text-decoration: none;
+	color:#6A574D;
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+.drawer-overlay{
+	background-color: rgba(194,194,194,0.00);
+}
+.key-message {
+	background-image: url("4401323_s.jpg");
+	min-height:  600px;
+	background-attachment: fixed;
+	background-size:cover;
+	background-position: 10% 25%;
+}
+
+.key-message-text{
+	position:absolute;
+	top:50%;
+	left:10%;
+	
+	font-size: 46px;
+	
+	  display        : inline-block;
+	  color          : #ffffff;            /* 文字の色 */
+	  font-size      : 30pt;               /* 文字のサイズ */
+	  letter-spacing : 6px;                /* 文字間 */
+	  text-shadow    : 
+		   3px  3px 2px #4e3322,
+		  -3px  3px 2px #4e3322,
+		   3px -3px 2px #4e3322,
+		  -3px -3px 2px #4e3322,
+		   3px  0px 2px #4e3322,
+		   0px  3px 2px #4e3322,
+		  -3px  0px 2px #4e3322,
+		   0px -3px 2px #4e3322;        /* 文字の影 */
+
+}
+/*自塾の特徴*/
+	.features {
+		margin:30px;
+	}
+	
+	.feature {
+		padding: 20px;
+		text-align: center;
+	}
+	
+	.feature-image {
+		width: 300px;
+		
+	}
+	
+	.feature-text {
+		text-align: center;
+	}
+	
+	.feature-image img {
+		width: 100%;
+		height:200px;
+		border-radius:20px;
+		
+	}
+
+
+/*ニュース一覧*/
+.news {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.news ul{
+	list-style-type: none;
+}
+
+.news ul li{
+	display: flex;
+	border-bottom: 1px solid #d5d5d5;
+	padding: 30px 40px;
+	align-items: center;
+}
+
+.news ul li div{
+	line-height: 10px;
+	font-size: 16px;
+	margin: 0 16px;
+}
+.news-date {
+	color: #3264C2;
+}
+
+.label {
+	padding: 5px 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.label-notice{
+	background: #7c4515;
+	color:white;
+	font-size: 10px;
+}
+
+.label-blog{
+	background:#7c4515;
+	color:white;
+	font-size: 10px;
+}
+.news-text a {
+	text-decoration: none;
+	color: #3264C2;
+}
+
+/*フッター*/
+.footer {
+ background: #FFEDA1;
+ color: #1F1F1F;
+}
+
+.footer-inner {
+	display: flex;
+	justify-content: space-between;
+	
+	width: 80%;
+	margin: auto;
+}
+
+
+.footer-content ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-content ul li{
+	padding: 5px 20px;
+	position: relative;
+}
+
+.footer-content ul li:before{
+	content:'';
+	display:block;
+	position: absolute;
+	
+	top: 10px;
+	left: 2px;
+	
+	width: 0;
+	height: 0;
+	
+	border-top: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 9px solid #000;
+}
+.footer-content a{
+	text-decoration: none;
+	color:#171717;
+}
+
+
+/*メニューをページ下部に固定*/
+#sp-fixed-menu{
+	position: fixed;
+	width:100%;
+	bottom: 0px;
+	font-size: 0;
+	z-index: 99;
+}
+
+/*メニューを横並びにする*/
+#sp-fixed-menu ul{
+   display: flex;
+   list-style: none;
+   padding:0;
+   margin:0;
+   width:100%;
+	
+}
+
+#sp-fixed-menu li{
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   padding:0;
+   margin:0;
+   font-size: 20px;
+   border-right: 1px solid #fff;
+	background: #f3a324;
+}
+
+/*ボタンを調整*/
+#sp-fixed-menu li a{
+   color: #fff;
+   text-align: center;
+   display:block;
+   width: 100%;
+   padding:20px;
+}
+
+
