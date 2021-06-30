@@ -1,0 +1,34 @@
+
+/*タブレット・スマホ向け*/
+@media screen and (max-width: 1000px) {
+	.header-menu{
+        display: none;
+    }
+
+	
+	.news-text {
+		font-size:12px;
+	}
+
+
+	
+}
+
+/*PC向け*/
+
+@media screen and (min-width: 1001px) {
+
+	.features {
+		
+		display:flex;
+	}
+
+	
+	/*固定コンバージョン*/
+	.for-sp{
+        display: none;
+    }
+	
+	
+	
+}
